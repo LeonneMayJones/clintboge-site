@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clint Boge</title>
+    <style>
+        /* Setup the layout to be full height with elements spread out */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* Main container for Signature and Portrait */
+        .content {
+            flex: 1 0 auto; /* Keeps content at the top/middle */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            max-width: 900px;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        /* The Signature Logo - Small and elegant */
+        .logo-sig {
+            width: 25%;
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        /* The Portrait - Hero of the page */
+        .portrait-wrap {
+            width: 100%;
+            max-width: 750px;
+            display: block;
+        }
+
+        .portrait {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Footer - Pinned to the very bottom */
+        .footer {
+            flex-shrink: 0; /* Prevents footer from squashing */
+            padding-bottom: 50px;
+            text-align: center;
+        }
+
+        .email-link {
+            font-size: 0.8rem;
+            text-decoration: none;
+            color: #888;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 5px;
+        }
+
+        .email-link:hover {
+            color: #000;
+            border-bottom: 1px solid #000;
+        }
+
+        /* Responsive tweak for mobile */
+        @media (max-width: 600px) {
+            .logo-sig { width: 40%; }
+            .content { padding-top: 30px; }
+            .email-link { font-size: 0.7rem; letter-spacing: 2px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <img src="ClintBoge_Name_v2.png" alt="Clint Boge" class="logo-sig">
+        
+        <div class="portrait-wrap">
+            <img src="CB_EDIT_V1-00146.jpg" alt="Clint Boge Portrait" class="portrait">
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="mailto:hello@clintboge.com" class="email-link">hello@clintboge.com</a>
+    </div>
+
+</body>
+</html>
